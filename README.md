@@ -5,7 +5,7 @@
 
 - 通过修改src文件夹下面的index.js部分开启http2/http服务
 
-- Http2 服务访问https://localhost:3000
+- Http2 服务访问https://localhost:3000 (虽然http2协议本身不要求https,但几大浏览器厂商都默认http2只支持https)
 
 - Http 服务访问http://localhost:3000
 
@@ -46,8 +46,5 @@ http2主动推送静态资源存在的问题：
 
 #### 遗留问题
 
-- 为什么http2只能起https的服务。
-  node官网上给了http2起http服务的API(createServer)，但是跑步起来
-
-- http2发送几个tcp连接时不可设置的嘛？
+- http2发送几个tcp连接是不可设置的嘛？
   例子中http同时并发了6个tcp链接，http2只有一个，导致虽然http2多路复用，但速度还没有并发6个的http快
