@@ -25,7 +25,8 @@
 
 - bundle1和bundle2由document解析完服务器发起的请求
 
-- 在请求很多个图片时，创建了多个Tcp请求![https://github.com/includeios/http-example/blob/master/static/image/image-20190221162021648.png)
+- 在请求很多个图片时，创建了多个Tcp请求
+![image-20190221162021648](https://github.com/includeios/http-example/blob/master/static/image/image-20190221162021648.png)
 
 
 
